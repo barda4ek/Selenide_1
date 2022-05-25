@@ -2,7 +2,8 @@ package pageobjects;
 import com.codeborne.selenide.SelenideElement;
 import static com.codeborne.selenide.Selectors.byName;
 import static com.codeborne.selenide.Selenide.*;
-import static org.hamcrest.MatcherAssert.assertThat;
+import static org.assertj.core.api.Assertions.assertThat;
+
 
 public class Page {
     String URL;

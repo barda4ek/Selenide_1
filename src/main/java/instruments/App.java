@@ -6,8 +6,8 @@ import pageobjects.OrderPage;
 
 import static com.codeborne.selenide.Condition.exist;
 import static com.codeborne.selenide.Condition.visible;
-import static pageobjects.Page.go;
-import static pageobjects.Page.isPage;
+import static pageobjects.BasePage.go;
+import static pageobjects.BasePage.isPage;
 
 public class App {
         public static LoginPage loginPage = new LoginPage();

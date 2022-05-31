@@ -2,11 +2,12 @@ package pageobjects;
 
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
+import org.openqa.selenium.support.FindBy;
 
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
-public class HomePage extends Page {
+public class HomePage extends BasePage {
     //добавить бейс самого сайта.
     public static final String URL = "http://automationpractice.com/index.php";
     public static final String EXPECTED_TITLE = "My Store";
@@ -14,6 +15,12 @@ public class HomePage extends Page {
     public HomePage(){super(URL, EXPECTED_TITLE);}
 
     public SelenideElement loginButton = $(byText("Sign in"));
+
+    @FindBy(css = "")
+    private SelenideElement loginButton2;
+
+
+
     public ElementsCollection popularItems= $$("#homefeatured");
 
     public SelenideElement firstItemImage =

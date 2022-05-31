@@ -6,7 +6,7 @@ import static com.codeborne.selenide.Selectors.byClassName;
 import static com.codeborne.selenide.Selectors.byName;
 import static com.codeborne.selenide.Selenide.$;
 
-public class LoginPage extends Page {
+public class LoginPage extends BasePage {
     public static final String URL = "http://automationpractice.com/index.php?controller=authentication&back=my-account";
     public static final String EXPECTED_TITLE = "My Store";
 

@@ -9,7 +9,7 @@ import org.junit.jupiter.api.extension.ExtendWith;
 
 import static instruments.App.*;
 import static instruments.App.orderPage;
-import static pageobjects.Page.*;
+import static pageobjects.BasePage.*;
 
 @ExtendWith({TextReportExtension.class})
 
